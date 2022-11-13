@@ -14,6 +14,20 @@ komment
         minden feketebekezdés class-ba tartózara vonatkozik
     }
 
+    h2.feketebekezdés {
+        azok a h2 tagek, amelyeknek feketebekezdés a class-a, ott alkalmazza kapcsos 
+        zárójelek közötti formázást
+    }
+
+
+    #id azonosítás
+    #sárga { background-color: rgb(210, 177, 20);
+    }
+
+    <h1 class="feketebekezdes" id ="sarga">    <h1/>
+
+*/
+
 
 body {
     background-color: rgb(210, 177, 20);
