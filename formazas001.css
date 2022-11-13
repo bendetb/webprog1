@@ -1,0 +1,20 @@
+/*
+komment
+    */
+/*
+    * {
+        minden szelektorra igaz
+    }
+
+    tagnév {
+        mely tag szelektorokra (pl h1, h3, stb vesszővel elválasztva) igaz
+    }
+
+    .feketebekezdés {
+        minden feketebekezdés class-ba tartózara vonatkozik
+    }
+
+
+body {
+    background-color: rgb(210, 177, 20);
+}
