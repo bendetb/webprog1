@@ -3,93 +3,211 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Webprogramozás I. beadandó 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Órarend</title>
+
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+    <script src="public/js/jquery-3.6.1.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar-brand,
+        .navbar-nav,
+        .nav,
+        .nav-item {
+
+            background-color:rgb(114, 179, 240);
+            color: black;
+        }
+
+        .container-fluid {
+            background-color:rgb(238, 237, 228);
+        }
+
+        .col-3, .col-2 {
+            overflow-wrap: break-word;
+            border-top: 1px;
+            border-left: 1px;
+            border-right: 1px;
+            border-style: solid;
+            border-color: black;
+            border-bottom: 0px;
+        }
+
+        .col-7 {
+            overflow-wrap: break-word;
+            border-top: 1px;
+            border-style: solid;
+            border-color: black;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+
+
+        .col-10 {
+            overflow-wrap: break-word;
+            border-top: 1px;
+            border-left: 1px;
+            border-style: solid;
+            border-color: black;
+            border-bottom: 0px;
+            border-right: 0px;
+        }
+
+        .utolsoSor {
+            border-bottom: 1px;
+            border-style: solid;
+            border-color: black;
+
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1> Órarend  </h1>
-<table>
-    <thead>
-        <th>Tárgykód</th> <th>Tárgynév</th> <th>Kredit érték</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>TBG_KM731K2</td>
-            <td>Bevezetés a kommunikációelméletbe</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI984K2</td>
-            <td>Munkaerőpiaci ismeretek</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBP_MI937G2</td>
-            <td>Információs és kommunikációs technológiák (IKT)</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI157K3</td>
-            <td>Számítógép architektúrák</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>TBI_PI741G2</td>
-            <td>Bevezetés az informatikába gy.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI740K2</td>
-            <td>Bevezetés az informatikába ea.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI201G2</td>
-            <td>A programozás módszertani alapjai gy.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI739G2</td>
-            <td>Webprogramozás I.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBP_IK190G3</td>
-            <td>Digitális tartalmak</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>TBI_PI813G2</td>
-            <td>Magasszintű programozási nyelvek I. gy.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>TBI_PI812K3</td>
-            <td>Magasszintű programozási nyelvek I. ea.</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>TBI_PI321G2</td>
-            <td>Idegen nyelv I.</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td colspan ="2">Kredit érték összesen</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+    <div class="row">
+        <div class="col-auto" style="background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
 
-</table>
+            <nav class="navbar-brand">
 
-</body>    
+                <a class="navbar-brand" href="#">
+                    <img src="ezaz_wp1.jpg" height="40">
+
+                </a>
+            </nav>
+        </div>
+        <div class="col" style="padding: 0px; background-color:  rgb(114, 179, 240);">
+
+            <nav class="navbar-nav"
+                style="padding-top: 8px; padding-bottom: 0px; background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color:  rgb(114, 179, 240);">
+
+                    <li class="nav-item">
+                        <a class="nav-item" href="index.html">Főoldal</a>
+                        <a class="nav-item" href="naptar.html">Naptár</a>
+                        <a class="nav-item" href="kepgaleria.html">Képgaléria</a>
+                        <a class="nav-item" href="video.html">Video galéria</a>
+                        <a class="nav-item" href="sakktabla.html">Sakktábla</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="container text-center" style=" padding:5px; " ;>
+            <h1> Órarend </h1>
+        </div>
+
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-3"><strong> Tárgykód</strong> </div>
+
+                <div class="col-7"> <strong>Tárgynév</strong> </div>
+
+                <div class="col-2"> <strong>Kredit érték </strong></div>
+            </div>
+            <div class="row">
+                <div class="col-3" >TBI_PI739G2</div>
+
+                <div class="col-7">Webprogramozás I. </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI813G2</div>
+
+                <div class="col-7">Magasszintű programozási nyelvek I. gy. </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI812K3</div>
+
+                <div class="col-7">Magasszintű programozási nyelvek I. ea. </div>
+
+                <div class="col-2"> 3 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI741G2</div>
+
+                <div class="col-7"> Bevezetés az informatikába gy. </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI740K2</div>
+
+                <div class="col-7"> Bevezetés az informatikába ea. </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI321G2</div>
+
+                <div class="col-7">Idegen nyelv I.</div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI201G2</div>
+
+                <div class="col-7">A programozás módszertani alapjai gy.</div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBG_KM731K2</div>
+
+                <div class="col-7"> Bevezetés a kommunikációelméletbe </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBP_MI937G2</div>
+
+                <div class="col-7"> Információs és kommunikációs technológiák (IKT) </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI984K2</div>
+
+                <div class="col-7"> Munkaerőpiaci ismeretek </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+                <div class="col-3">TBI_PI157K3</div>
+
+                <div class="col-7"> Számítógép architektúrák </div>
+
+                <div class="col-2"> 2 </div>
+            </div>
+            <div class="row">
+
+                <div class="col-3">TBP_IK190G3 </div>
+
+                <div class="col-7"> Digitális tartalmak </div>
+
+                <div class="col-2"> 3 </div>
+            </div>
+            <div class="row">
+
+                <div class="col-10 utolsoSor">Kredit érték összesen: </div>
+
+                 <div class="col-2 utolsoSor"> 26 </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+
+</body>

@@ -6,54 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Webprogramozás I. beadandó 1</title>
-    
+
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    
-   <script src="public/js/jquery-3.6.1.min.js"></script>   
-   <script src="public/js/bootstrap.bundle.min.js"></script>   
-   
+
+    <script src="public/js/jquery-3.6.1.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar-brand,
+        .navbar-nav,
+        .nav {
+
+            background-color: rgb(114, 179, 240);
+
+        }
+
+        .container-fluid {
+            background-color: rgb(238, 237, 228);
+        }
+
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-8,
+        .col-9,
+        .col-5,
+        .col-10,
+        .col-12 {
+            overflow-wrap: break-word;
+        }
+
+        .CegNev {
+            font-weight: bold;
+        }
+    </style>
 
 </head>
 
-<body >
-     
-    <p1> Menü:
-        <a href="naptar.html" > Naptár                                  </a>   
+<body>
+    <div class="row">
+        <div class="col-auto" style="background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
 
-        <a href="orarend.html" > Órarend </a>   
-    </p1>
+            <nav class="navbar-brand">
 
-<div class="container">
-<h1>
-Önéletrajz
+                <a class="navbar-brand" href="#">
+                    <img src="ezaz_wp1.jpg" height="40">
 
-</h1>
+                </a>
+            </nav>
+        </div>
+        <div class="col" style="padding: 0px; border-bottom-style: outset;">
 
+            <nav class="navbar-nav">
 
-<p>
-    Személyes adatok
-</p>
+                <ul class="navbar-nav">
 
-<p>
-    Munkahelyek
-</p>
-
-<p>
-    Tanulmányok
-</p>
-<p>
-    Kompetenciák
-</p>
-
-<p>
-    Hosszú vonal
-</p>
-<p>
-    Egyéb (kontakt, letöltés)
-</p>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menü</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="orarend.html">Órarend</a>
+                            <a class="dropdown-item" href="naptar.html">Naptár</a>
+                            <a class="dropdown-item" href="kepgaleria.html">Képgaléria</a>
+                            <a class="dropdown-item" href="video.html">Video galéria</a>
+                            <a class="dropdown-item" href="sakktabla.html">Sakktábla</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
-</div>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+
+
+
+        <h1>
+            Bende Tibor Ferenc </h1>
+
+
+        <a href="#Alapadatok"> <small>Alapadatok</small></a>
+        <a href="#Szakma"> <small>Szakmai tapasztalat</small></a>
+        <a href="#Oktatas"> <small>Oktatás és képzés</small></a>
+        <a href="#Nyelv"> <small>Nyelvtudás</small></a>
+        <a href="#Digi"> <small>Digitális készségek</small></a>
+        <a href="#Egyeb"> <small>Egyéb</small></a>
+
+        <p id="Alapadatok"> <strong>Alapadatok</strong></p>
+
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-2"> <img src="ezaz_wp1.jpg" class="img-fluid" alt="Bende Tibor"> </div>
+
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-10">
+                            <strong>Cím:</strong> Lónyay utca 41., 1093 Budapest
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <strong>E-mail:</strong> bendetb@gmail.com
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <strong>Tel:</strong> 30/9532641
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <strong>Születési idő:</strong> 1979.06.23
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <p id="Szakma"> <strong>Szakmai tapasztalat</strong></p>
+
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-4">
+                    2021.08.09 - jelenleg
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-8">
+                            <strong style="color: blue">Szenior kontroller</strong>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8 CegNev">
+                                Atev Zrt.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                Budapest
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    2010.07.01 - 2021.08.08
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-8">
+                            <strong style="color: blue">Kontroller</strong>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 CegNev">
+                                Sanofi Magyarország Zrt.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                Budapest
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <p id="Oktatas"> <strong>Oktatás és képzés</strong></p>
+
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-4">
+                    2005.09.01 - 2010.06.30
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-8">
+                            <strong style="color: blue">Okleveles közgazdász</strong>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-8 CegNev">
+                                BME - Gazdaságtudományi Kar
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                Budapest
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="Nyelv"> <strong>Nyelvtudás</strong></p>
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-4">
+                    Anyanyelv:
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-8" style="color: blue">
+                                magyar
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    További nyelvek:
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-8" style="color: blue">
+                                angol (C1)
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <p id="Digi"> <strong>Digitális készségek</strong></p>
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-12" style="color:blue">
+                    Word Excel felhasználói szintű ismerete
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p id="Egyeb"> <strong>Egyéb</strong></p>
+        <div class="container text-start">
+            <div class="row">
+                <div class="col-6" style="color:blue">
+                   <a href="CV - Tibor Ferenc Bende.pdf" download="CV.pdf">
+                    <small>CV letöltés</small>
+                   </a>                   
+                </div>
+
+                <div class="col-6" style="color:blue">
+                    <a href="mailto:bendetb@gmail.com?subject=Webprogramozás I.">
+                        <small>Kapcsolat</small>
+                       </a> 
+                   
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
 
 </body>
 

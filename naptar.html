@@ -3,73 +3,134 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Webprogramozás I. beadandó 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Naptár</title>
+    <link rel="stylesheet" href="formazas001.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <script src="public/js/jquery-3.6.1.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar-brand,
+        .navbar-nav,
+        .nav,
+        .nav-item {
+
+            background-color:rgb(114, 179, 240);
+            color: black;
+        }
+
+        .container-fluid {
+            background-color:rgb(238, 237, 228);
+            overflow-wrap: break-word;
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1>
-    
-        Naptár
-    
-    </h1>
+
+    <div class="row" >
+        <div class="col-auto" style="background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
+
+        <nav class="navbar-brand">
+
+            <a class="navbar-brand" href="#">
+                <img src="ezaz_wp1.jpg" height="40">
+
+            </a>
+        </nav>
+    </div>
+    <div class="col" style="padding: 0px; background-color:  rgb(114, 179, 240);">
+
+        <nav class="navbar-nav"
+            style="padding-top: 8px; padding-bottom: 0px; background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color:  rgb(114, 179, 240);">
+
+                <li class="nav-item">
+                    <a class="nav-item" href="index.html">Főoldal</a>
+                    <a class="nav-item" href="orarend.html">Órarend</a>
+                    <a class="nav-item" href="kepgaleria.html">Képgaléria</a>
+                    <a class="nav-item" href="video.html">Video galéria</a>
+                    <a class="nav-item" href="sakktabla.html">Sakktábla</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
 
-<table>
-    <thead>
-        <th>Hétfő</th> <th>Kedd</th> <th>Szerda</th> <th>Csütörtök</th> <th>Péntek</th>
-         <th>Szombat</th> <th>Vasárnap</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="background-color: grey;color: red;">28</td>
-            <td style="background-color: grey;color: red;">29</td>
-            <td style="background-color: grey;color: red;">30</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
+    </div>
 
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-            <td style="background-color: grey;color: red;">1</td>
-        </tr>
-           
-      
-    </tbody>
+    <div class="container-fluid">
+        <h1>
 
-</table>
-</body>    
+            Naptár - 2022 December
+
+        </h1>
+
+
+        <table>
+            <thead>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csütörtök</th>
+                <th>Péntek</th>
+                <th>Szombat</th>
+                <th>Vasárnap</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: grey;color: red;">28</td>
+                    <td style="background-color: grey;color: red;">29</td>
+                    <td style="background-color: grey;color: red;">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td style="background-color: grey;color: red;">1</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+    </div>
+    <hr>
+</body>
