@@ -6,17 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sakktábla</title>
 
-    
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+    <script src="public/js/jquery-3.6.1.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar-brand,
+        .navbar-nav,
+        .nav,
+        .nav-item {
+
+            background-color: rgb(114, 179, 240);
+            color: black;
+        }
+
+        :root {
+            --pixelek: 80vw;
+        }
+       
+        .feher {
+            background-color: white;
+            color: black;
+            width: calc(var(--pixelek)/8);
+            height: calc(var(--pixelek)/8);
+            text-align: center;
+        }
+        .fekete {
+            background-color: black;
+            color: beige;
+            width: calc(var(--pixelek)/8);
+            height: calc(var(--pixelek)/8);
+            text-align: center;
+
+        }
+
+    </style>
 
 </head>
 
 <body>
+    <div class="container-fluid">
 
-    
+        <div class="row">
+            <div class="col-auto" style="background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
+
+                <nav class="navbar-brand">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="ezaz_wp1.jpg" height="40">
+
+                    </a>
+                </nav>
+            </div>
+            <div class="col" style="padding: 0px; background-color:  rgb(114, 179, 240);">
+
+                <nav class="navbar-nav"
+                    style="padding-top: 8px; padding-bottom: 0px; background-color:  rgb(114, 179, 240);border-bottom-style: outset;">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color:  rgb(114, 179, 240);">
+
+                        <li class="nav-item">
+                            <a class="nav-item" href="index.html">Főoldal</a>
+                            <a class="nav-item" href="orarend.html">Órarend</a>
+                            <a class="nav-item" href="kepgaleria.html">Képgaléria</a>
+                            <a class="nav-item" href="video.html">Video galéria</a>
+                            <a class="nav-item" href="naptar.html">Naptár</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
     <h1>
-    
-     Sakktábla
-    
+        <br>
+        Sakktábla
+
     </h1>
 
-</body>    
+
+    <table>
+        <tbody>
+            <tr>
+                <td class="feher">A1</td>
+                <td class="fekete">A2</td>
+                <td class="feher">A3</td>
+                <td class="fekete">A4</td>
+                <td class="feher">A5</td>
+                <td class="fekete">A6</td>
+                <td class="feher">A7</td>
+                <td class="fekete">A8</td>
+            </tr>
+            <tr>
+                <td class="fekete">B1</td>
+                <td class="feher">B2</td>
+                <td class="fekete">B3</td>
+                <td class="feher">B4</td>
+                <td class="fekete">B5</td>
+                <td class="feher">B6</td>
+                <td class="fekete">B7</td>
+                <td class="feher">B8</td>
+            </tr>
+            <tr>
+                <td class="feher">C1</td>
+                <td class="fekete">C2</td>
+                <td class="feher">C3</td>
+                <td class="fekete">C4</td>
+                <td class="feher">C5</td>
+                <td class="fekete">C6</td>
+                <td class="feher">C7</td>
+                <td class="fekete">C8</td>
+            </tr>
+            <tr>
+                <td class="fekete">D1</td>
+                <td class="feher">D2</td>
+                <td class="fekete">D3</td>
+                <td class="feher">D4</td>
+                <td class="fekete">D5</td>
+                <td class="feher">D6</td>
+                <td class="fekete">D7</td>
+                <td class="feher">D8</td>
+            </tr>
+            <tr>
+                <td class="feher">E1</td>
+                <td class="fekete">E2</td>
+                <td class="feher">E3</td>
+                <td class="fekete">E4</td>
+                <td class="feher">E5</td>
+                <td class="fekete">E6</td>
+                <td class="feher">E7</td>
+                <td class="fekete">E8</td>
+            </tr>
+            <tr>
+                <td class="fekete">F1</td>
+                <td class="feher">F2</td>
+                <td class="fekete">F3</td>
+                <td class="feher">F4</td>
+                <td class="fekete">F5</td>
+                <td class="feher">F6</td>
+                <td class="fekete">F7</td>
+                <td class="feher">F8</td>
+            </tr>
+            <tr>
+                <td class="feher">G1</td>
+                <td class="fekete">G2</td>
+                <td class="feher">G3</td>
+                <td class="fekete">G4</td>
+                <td class="feher">G5</td>
+                <td class="fekete">G6</td>
+                <td class="feher">G7</td>
+                <td class="fekete">G8</td>
+            </tr>
+
+
+
+        </tbody>
+
+    </table>
+
+</body>
